@@ -13,7 +13,6 @@ header {
 }
 
 .background-header {
-    /*background: url("https://assets.rockwerchter.be/layout/frontend/img/svg/pattern-2020.svg");*/
     background-image: url("../images/background-header.bmp");
     background-position: center;
     background-repeat: repeat;
@@ -26,6 +25,11 @@ header {
     min-height: 240px;
 }
 
+.background-footer {
+    background-color: #0000ff;
+    min-height: 240px;
+}
+
 .datum-locatie-header {
     position: relative;
     font-family: "Oswald" , sans-serif;
@@ -33,14 +37,17 @@ header {
     font-size: 34px;
     line-height: 38px;
     color: #f6c4c4;
-    margin: 50px 50px 24px 50px;
+    margin: 50px 48px 24px 48px;
 }
 
 .menucontainer {
     font-size: 0;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: #f36f3b
+    padding-bottom: 5px;
+    background: -moz-linear-gradient(45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
+    background: linear-gradient(to 45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
 }
 
 .list-inline-item:not(:last-child) {
@@ -68,21 +75,15 @@ header {
 }
 
 .navigation-header {
-    position: absolute;
-    right: 0;
-    top: 160px;
-}
-
-.navigation-header2 {
     position: relative;
-    top: 180px;
+    top: 120px;
     right: 0;
     padding: 0;
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .navigation-header2 {
+@media only screen and (max-width: 767px) {
+  .navigation-header {
     top: 0px;
   }
 
@@ -132,7 +133,7 @@ section div p {
 
 /*--------------------------------section pictures layout*/
 
-.picture-big {
+.picture-big-groepsfoto2 {
     background-image: url("../images/groepsfoto2.bmp");
     background-size: auto;
     background-position: center;
@@ -140,7 +141,7 @@ section div p {
     height: 600px;
 }
 
-.picture-small {
+.picture-small-auto1 {
     background-image: url("../images/auto1.bmp");
     background-size: cover;
     background-position: center;
@@ -148,7 +149,7 @@ section div p {
     height: 300px;
 }
 
-.picture-small2 {
+.picture-small-girls1 {
     background-image: url("../images/girls1.bmp");
     background-size: cover;
     background-position: center;
@@ -159,14 +160,38 @@ section div p {
     right: 0;
 }
 
-@media only screen and (max-width: 768px) {
-.picture-small2 {
+@media only screen and (max-width: 767px) {
+.picture-small-girls1 {
     position: relative;
     top: 0;
     }
-.picture-big {
+.picture-big-groepsfoto2 {
     background-size: cover;
     height: 300px;
 }
 
+}
+
+.video-size {
+   min-height: 300px;
+   min-width: 600px;
+}
+
+
+/*--------------------------------footer layout*/
+
+.social-link li a i {
+    width: 50px;
+    height: 50px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fafafa;
+    background-color: #000000;
+}
+
+.social-link li a i:hover {
+    background-color: rgba(83, 79, 79, 0.848);
 }
