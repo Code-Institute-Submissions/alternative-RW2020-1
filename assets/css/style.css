@@ -141,6 +141,26 @@ section div p {
     height: 600px;
 }
 
+.animation div div:hover{
+    animation-name: pictures;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.picture-big-outer {
+    height: 600px;
+    overflow: hidden;
+}
+
+@keyframes pictures {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.1)
+    }
+}
+
 .picture-small-auto1 {
     background-image: url("../images/auto1.bmp");
     background-size: cover;
@@ -155,18 +175,37 @@ section div p {
     background-position: center;
     background-repeat: no-repeat;    
     height: 300px;
+}
+
+.picture-small-outer {
+    height: 300px;
+    overflow: hidden;
+}
+
+.picture-small-outer2 {
+    height: 300px;
+    overflow: hidden;
     position: absolute;
     top: 540px;
     right: 0;
 }
 
 @media only screen and (max-width: 767px) {
+.picture-small-outer2 {
+    position: relative;
+    top: 0;
+}
+
 .picture-small-girls1 {
     position: relative;
     top: 0;
     }
 .picture-big-groepsfoto2 {
     background-size: cover;
+    height: 300px;
+}
+
+.picture-big-outer {
     height: 300px;
 }
 
@@ -195,3 +234,90 @@ section div p {
 .social-link li a i:hover {
     background-color: rgba(83, 79, 79, 0.848);
 }
+
+.social-link {
+    padding: 30px 40px 20px;
+}
+
+.social-link li{
+    padding: 10px 10px;
+}
+
+@media only screen and (max-width: 767px) {
+.social-link li a i {
+    width: 40px;
+    height: 40px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fafafa;
+    background-color: #000000;
+}
+
+.social-link {
+    padding: 20px 20px 10px;
+}
+
+}
+
+.footer-jupiler {
+    background-image: url("https://assets.rockwerchter.be/files/jup-white-5a05b1d939fa5.png?v32.1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+
+.footer-cocacola {
+    background-image: url("https://assets.rockwerchter.be/files/cocacola-5a05b1d94db4c.png?v32.1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+.footer-proximus {
+    background-image: url("https://assets.rockwerchter.be/files/proximus-5a05b1d9a1b56.png?v32.1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+.footer-stubru {
+    background-image: url("https://assets.rockwerchter.be/files/stubru-wit-5c5c4dc102fd1.png?v32.1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+.footer-pickx {
+    background-image: url("https://assets.rockwerchter.be/files/pickx-white-5d024384abe8f.png?v32.1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+.footer-winforlife {
+    background-image: url("https://assets.rockwerchter.be/files/winforlife-5a745f0064d2f.png?v32.1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+.sponsor li {
+    padding: 20px 20px 10px;
+}
+
