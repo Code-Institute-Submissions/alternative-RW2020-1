@@ -105,11 +105,11 @@ header {
 
 .text-style {
     border-width: 10px;
-    border-color: rgba(243,111,59, 1);
+    border-color: rgba(255,105,10, 1);
     border-style: solid;
     padding: 20px;
     padding-left: 50px; 
-    background-color: rgba(243,111,59, 0.5);
+    background-color: rgba(255,105,10, 0.5);
 }
 
 .padding {
@@ -131,7 +131,7 @@ section div p {
     text-align: center;
 }
 
-/*--------------------------------section pictures layout*/
+/*--------------------------------section pictures layout Home*/
 
 .picture-big-groepsfoto2 {
     background-image: url("../images/groepsfoto2.bmp");
@@ -147,7 +147,7 @@ section div p {
     animation-fill-mode: forwards;
 }
 
-.picture-big-outer {
+.picture-big-outer-600 {
     height: 600px;
     overflow: hidden;
 }
@@ -177,12 +177,12 @@ section div p {
     height: 300px;
 }
 
-.picture-small-outer {
+.picture-small-outer-300 {
     height: 300px;
     overflow: hidden;
 }
 
-.picture-small-outer2 {
+.picture-small-outer-300-abs {
     height: 300px;
     overflow: hidden;
     position: absolute;
@@ -191,7 +191,7 @@ section div p {
 }
 
 @media only screen and (max-width: 767px) {
-.picture-small-outer2 {
+.picture-small-outer-300-abs {
     position: relative;
     top: 0;
 }
@@ -205,7 +205,7 @@ section div p {
     height: 300px;
 }
 
-.picture-big-outer {
+.picture-big-outer-600 {
     height: 300px;
 }
 
@@ -216,6 +216,82 @@ section div p {
    min-width: 600px;
 }
 
+/*--------------------------------section pictures layout Ticket*/
+
+.picture-container {
+    background: -moz-linear-gradient(45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
+    background: linear-gradient(to 45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
+
+}
+
+.picture-big-camping {
+    background-image: url("../images/camping-opbouw.bmp");
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.picture-big-champagne {
+    background-image: url("../images/camping-champagne.bmp");
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin: 50px;
+}
+
+.picture-big-outer-400 {
+    height: 400px;
+    overflow: hidden;
+}
+
+.picture-big-outer-800 {
+    height: 900px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1050px) {
+
+.picture-big-outer-800 {
+    height: 800px;
+}
+}
+
+@media only screen and (max-width: 900px) {
+.picture-big-outer-400 {
+    height: 300px;
+}
+
+.picture-big-champagne{
+    margin: 0px;
+}
+
+.picture-big-outer-800 {
+    height: 650px;
+}
+}
+
+@media only screen and (max-width: 640px) {
+.picture-big-outer-400 {
+    height: 200px;
+}
+
+.picture-big-champagne{
+    margin: 0px;
+}
+
+.picture-big-outer-800 {
+    height: 600px;
+}
+}
+
+@media only screen and (max-width: 430px) {
+.picture-big-outer-400 {
+    height: 150px;
+}
+}
 
 /*--------------------------------footer layout*/
 
@@ -319,5 +395,69 @@ section div p {
 
 .sponsor li {
     padding: 20px 20px 10px;
+}
+
+
+/*--------------------------------tickets form layout*/
+
+
+.signup-form {
+    color: #fff;
+    background: -moz-linear-gradient(45deg, rgba(100, 60, 250, 0.6), rgba(255, 105, 10, 0.6) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(100, 60, 250, 0.6), rgba(255, 105, 10, 0.6) 100%);
+    background: linear-gradient(to 45deg, rgba(100, 60, 250, 0.6), rgba(255, 105, 10, 0.6) 100%);
+    max-width: 500px;
+    left: 15%;
+    padding: 50px;
+}
+
+.signup-form h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width:100%;
+    height: 25px;
+    margin: 5px 0px 20px;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: rgba(255, 105, 10, 1);
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: rgba(255, 105, 10, 1);
+    color: #fafafa;
+    display: block;
+}
+
+.join-button:hover {
+    background-color: rgba(100, 60, 250, 1);
+    color: #fafafa;
+}
+
+@media only screen and (min-width: 1050px) {
+
+.signup-form {
+    position: relative;
+    
+}
+}
+
+@media only screen and (max-width: 640px) {
+ ::placeholder {
+  color: black;
+  opacity: 1; 
+}
 }
 

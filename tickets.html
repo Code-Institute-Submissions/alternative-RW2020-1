@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
 		type="text/css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<title>Home - JdeB-alternative-RW2020</title>
+	<title>Tickets - JdeB-alternative-RW2020</title>
 
 </head>
 
@@ -34,7 +34,7 @@
 				<div class="col navigation-header uppercase">
 					<ul id="nav" class="list-inline menucontainer">
 						<li class="col-12 col-sm-3 list-inline-item menuitem">
-							<a href="index.html" class="active"><span>Home</span></a>
+							<a href="index.html"><span>Home</span></a>
 						</li>
 						<li class="col-12 col-sm-3 list-inline-item menuitem">
 							<a href="pictures.html"><span>Pictures</span></a>
@@ -43,7 +43,7 @@
 							<a href="#"><span>Faqs</span></a>
 						</li>
 						<li class="col-12 col-sm-3 list-inline-item menuitem">
-							<a href="tickets.html"><span>Tickets</span></a>
+							<a href="tickets.html" class="active"><span>Tickets</span></a>
 						</li>
 					</ul>
 				</div>
@@ -51,44 +51,53 @@
 		</div>
 	</header>
 	<section>
-		<div class="row no-gutters animation">
-			<div class="col-12 col-md-8 picture-big-outer-600">
-				<div class="picture-big-groepsfoto2">
+		<div class="row no-gutters">
+			<div class="col-12 text-style">
+				<div class="padding">
+					<h2> So.. How to get tickets for this epic festival!?!</h2>
+					<p>The only thing you need to do, is to fillout the sign up form.<br>
+                       But unfortunately this will not guarantee that you will get tickets for this awesome fourth of July.<br>
+                       We expect the interest to be overwhelming, so we designed a hunger games style lottery that gives every applicant a equal change to get a ticket.<br>
+                       Sign up and we will call you if you are awarded a ticket.<br>
+                       <p class="uppercase">Don't call us!<p>
+					</p>
 				</div>
 			</div>
-			<div class="col-12 col-md-4 picture-small-outer-300">
-				<div class="picture-small-auto1">
-				</div>
-			</div>
-			<div class="col-12 col-md-4 picture-small-outer-300-abs">
-				<div class="picture-small-girls1">
+		</div>
+		<div class="picture-container">
+			<div class="row no-gutters">
+				<div class="col-12 picture-big-outer-800">
+					<div class="picture-big-champagne">
+							<form method="post" action="https://formdump.codeinstitute.net/" class="signup-form">
+								<h2>Sign up and join the fun!</h2>
+								<label for="fname">First Name</label>
+								<input type="text" name="first_name" required id="fname" class="text-input" placeholder="First Name">
+								<label for="lname">Last Name</label>
+								<input type="text" name="last_name" required id="lname" class="text-input" placeholder="Last Name">
+								<label for="email">Email Address</label>
+								<input type="email" name="email_address" required id="email" class="text-input" placeholder="Email@address.com">
+								<label for="phone">Mobile Phone Number</label>
+								<input type="tel" name="phone" required id="phone" class="text-input" placeholder="06-12345678" pattern="[0-9]{2}-[0-9]{8}">                                
+								<div>
+                                <label for="thisrty">Thirsty</label>
+								<input type="radio" name="thirst meter" id="thisrty" value="thisrty" required>
+								<label for="very thirsty">Very Thirsty</label>
+								<input type="radio" name="thirst meter" id="very thirsty" value="very thirsty">
+								<label for="bottomless thirst">Bottomless Thirst</label>
+								<input type="radio" name="thirst meter" id="bottomless thirst" value="bottomless thirst">
+								<input type="submit" value="Let's Rock!" class="join-button">
+								</div>
+                        </form>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row no-gutters">
 			<div class="col-12 text-style">
 				<div class="padding">
-					<h2> Why is Rock Werchter 2020 taking place in a backyard in Obdam?</h2>
-					<p>The National Security Council of Belgium has decided that large gatherings including festivals
-						are banned until 31 August due to the coronavirus.<br>
-                        This is the reason for this one time shift of Rock Werchter to The Netherlands. We have searched far and wide for the right location.<br>
-                        We are glad to announce that the new location is the backyard of JdeB in Obdam. Everything that makes RW great will be present at festivalpark Obdam.<br>
-                        Such as but not limited to, music, beer, grass, tents, spring rolls, mud, sun, heat and more beer!
-                    </p>
-				</div>
-			</div>
-		</div>
-		<div class="row no-gutters">
-			<div class="col-12 col-md-6">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="../assets/videos/Mumford&Sons-The Cave.mp4"
-						allowfullscreen></iframe>
-				</div>
-			</div>
-			<div class="col-12 col-md-6">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="../assets/videos/Muse-Uprising.mp4"
-						allowfullscreen></iframe>
+					<h2> Ticket text</h2>
+					<p>Ticket text
+					</p>
 				</div>
 			</div>
 		</div>
@@ -129,46 +138,6 @@
 									<span class="sr-only">Youtube</span>
 								</a>
 							</li>
-						</ul>
-					</div>
-					<div class="col-sm-12">
-						<ul class="list-inline sponsor">
-							<li class="list-inline-item">
-								<a href="https://jupiler.be/nl" target="_blank">
-									<img class="footer-jupiler" aria-hidden="true">
-									<span class="sr-only">logo Jupiler</span>
-								</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="https://www.cocacola.be/nl/home/" target="_blank">
-									<img class="footer-cocacola" aria-hidden="true">
-									<span class="sr-only">logo Coca cola</span>
-								</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="https://www.proximus.be/nl/personal/?" target="_blank">
-									<img class="footer-proximus" aria-hidden="true">
-									<span class="sr-only">logo proximus</span>
-								</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="https://stubru.be/" target="_blank">
-									<img class="footer-stubru" aria-hidden="true">
-									<span class="sr-only">logo Studio Brussel</span>
-								</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="https://www.proximus.be/pickx/nl" target="_blank">
-									<img class="footer-pickx" aria-hidden="true">
-									<span class="sr-only">logo Pickx</span>
-								</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="http://www.winforlife.be/language" target="_blank">
-									<img class="footer-winforlife" aria-hidden="true">
-									<span class="sr-only">logo winforlife</span>
-								</a>
-							</li>                            
 						</ul>
 					</div>
 				</div>
