@@ -6,11 +6,6 @@ header {
     margin: 0;
 } 
 
-.container-fluid {
-    padding: 0;
-    height: 240px;
-
-}
 
 .background-header {
     background-image: url("../images/background-header.bmp");
@@ -108,13 +103,22 @@ header {
     border-color: rgba(255,105,10, 1);
     border-style: solid;
     padding: 20px;
-    padding-left: 50px; 
     background-color: rgba(255,105,10, 0.5);
 }
 
-.padding {
-    padding-left: 30px;
-    padding-right: 20px;
+.text-style-inside {
+    border-width: 10px;
+    border-color: rgba(255,105,10, 1);
+    border-style: solid;
+    padding-top: 20px;
+    background-color: rgba(255,105,10, 0.5);
+}
+
+h1 {
+    font-size: 18px;
+    font-family: "Oswald" , sans-serif;
+    font-weight: 600;
+    text-align: center;
 }
 
 h2 {
@@ -129,6 +133,15 @@ section div p {
     font-family: "Oswald" , sans-serif;
     font-weight: 300;
     text-align: center;
+}
+
+.center {
+    text-align: center;
+    list-style-position: inside;
+      font-size: 14px;
+    font-family: "Oswald" , sans-serif;
+    font-weight: 300;
+    padding-left: 10px;
 }
 
 /*--------------------------------section pictures layout Home*/
@@ -186,27 +199,29 @@ section div p {
     height: 300px;
     overflow: hidden;
     position: absolute;
-    top: 540px;
+    top: 726px;
     right: 0;
 }
 
 @media only screen and (max-width: 767px) {
 .picture-small-outer-300-abs {
     position: relative;
+    height: 400px;
     top: 0;
 }
 
 .picture-small-girls1 {
     position: relative;
+    height: 400px;
     top: 0;
     }
 .picture-big-groepsfoto2 {
     background-size: cover;
-    height: 300px;
+    height: 400px;
 }
 
 .picture-big-outer-600 {
-    height: 300px;
+    height: 400px;
 }
 
 }
@@ -225,67 +240,52 @@ section div p {
 
 }
 
-.picture-big-camping {
-    background-image: url("../images/camping-opbouw.bmp");
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-    height: 800px;
-}
-
 .picture-big-champagne {
     background-image: url("../images/camping-champagne.bmp");
-    background-size: contain;
-    background-position: top center;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 800px;
-    margin: 50px;
-}
-
-.picture-big-outer-400 {
-    height: 400px;
-    overflow: hidden;
+    height: fit-content;
+    margin: 0px;
 }
 
 .picture-big-outer-800 {
-    height: 900px;
+    height: auto ;
     overflow: hidden;
 }
-
+/*
 @media only screen and (max-width: 1050px) {
 
 .picture-big-outer-800 {
     height: 800px;
 }
 }
+*/
+@media only screen and (max-width: 850px) {
 
-@media only screen and (max-width: 900px) {
-.picture-big-outer-400 {
-    height: 300px;
-}
-
-.picture-big-champagne{
+.picture-big-champagne {
     margin: 0px;
 }
+}
 
-.picture-big-outer-800 {
-    height: 650px;
-}
-}
 
 @media only screen and (max-width: 640px) {
 .picture-big-outer-400 {
     height: 200px;
 }
+.picture-big-champagne {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
 
-.picture-big-champagne{
-    margin: 0px;
 }
 
 .picture-big-outer-800 {
-    height: 600px;
+    height: 550px;
 }
 }
+
 
 @media only screen and (max-width: 430px) {
 .picture-big-outer-400 {
@@ -338,59 +338,37 @@ section div p {
 
 }
 
-.footer-jupiler {
+.footer-logo-layout {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+.footer-jupiler-logo {
     background-image: url("https://assets.rockwerchter.be/files/jup-white-5a05b1d939fa5.png?v32.1");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 75%;
-    min-height: 50px;
-    min-width: 100px;
 }
 
 
-.footer-cocacola {
+.footer-cocacola-logo {
     background-image: url("https://assets.rockwerchter.be/files/cocacola-5a05b1d94db4c.png?v32.1");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 75%;
-    min-height: 50px;
-    min-width: 100px;
 }
 
-.footer-proximus {
-    background-image: url("https://assets.rockwerchter.be/files/proximus-5a05b1d9a1b56.png?v32.1");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 75%;
-    min-height: 50px;
-    min-width: 100px;
+.footer-proximus-logo {
+    background-image: url("https://assets.rockwerchter.be/files/proximus-5a05b1d9a1b56.png?v32.1");    
 }
 
-.footer-stubru {
+.footer-stubru-logo {
     background-image: url("https://assets.rockwerchter.be/files/stubru-wit-5c5c4dc102fd1.png?v32.1");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 75%;
-    min-height: 50px;
-    min-width: 100px;
 }
 
-.footer-pickx {
+.footer-pickx-logo {
     background-image: url("https://assets.rockwerchter.be/files/pickx-white-5d024384abe8f.png?v32.1");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 75%;
-    min-height: 50px;
-    min-width: 100px;
 }
 
-.footer-winforlife {
+.footer-winforlife-logo {
     background-image: url("https://assets.rockwerchter.be/files/winforlife-5a745f0064d2f.png?v32.1");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 75%;
-    min-height: 50px;
-    min-width: 100px;
 }
 
 .sponsor li {
@@ -406,9 +384,8 @@ section div p {
     background: -moz-linear-gradient(45deg, rgba(100, 60, 250, 0.6), rgba(255, 105, 10, 0.6) 100%);
     background: -webkit-linear-gradient(45deg, rgba(100, 60, 250, 0.6), rgba(255, 105, 10, 0.6) 100%);
     background: linear-gradient(to 45deg, rgba(100, 60, 250, 0.6), rgba(255, 105, 10, 0.6) 100%);
-    max-width: 500px;
-    left: 15%;
-    padding: 50px;
+    max-width: 650px;
+    padding: 150px 150px 300px 150px;
 }
 
 .signup-form h2 {
@@ -446,18 +423,94 @@ section div p {
     color: #fafafa;
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (max-width: 1300px) {
 
 .signup-form {
-    position: relative;
-    
+    max-width: 650px;
+    padding: 150px;   
 }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1050px) {
+
+.signup-form {
+    max-width: 500px;
+    padding: 50px;   
+}
+}
+
+@media only screen and (max-width: 850px) {
+
+.signup-form {
+    max-width: 300px;
+    padding: 25px;   
+}
+
  ::placeholder {
-  color: black;
-  opacity: 1; 
+   color: black;
+   opacity: 1; 
+}
+}
+
+/*--------------------------------section pictures layout Festivalpark*/
+
+.picture-big-camping-opbouw {
+    background-image: url("../images/camping-opbouw.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.picture-big-festivalpark-day {
+    background-image: url("../images/festivalpark-day.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.picture-big-festivalpark-night {
+    background-image: url("../images/festivalpark-night.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.picture-big-camping-joris {
+    background-image: url("../images/camping-joris.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.picture-big-beerstack {
+    background-image: url("../images/beerstack.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.picture-big-beerfrige {
+    background-image: url("../images/beerfrige.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.picture-big-outer-400 {
+    height: 400px;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 900px) {
+.picture-big-outer-400 {
+    height: 300px;
 }
 }
 
