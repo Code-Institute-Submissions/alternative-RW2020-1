@@ -138,7 +138,7 @@ section div p {
 .center {
     text-align: center;
     list-style-position: inside;
-      font-size: 14px;
+    font-size: 14px;
     font-family: "Oswald" , sans-serif;
     font-weight: 300;
     padding-left: 10px;
@@ -514,3 +514,65 @@ section div p {
 }
 }
 
+
+/*--------------------------------section pictures layout line up*/
+
+.picture-big-outer-100pc {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.picture-line-up-wc-experience {
+    background-image: url("../images/line-up/wc-experience.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin: 10px;
+}
+
+.picture-line-up-merol {
+    background-image: url("../images/line-up/merol.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin: 10px;
+}
+
+.picture-line-up-golden-earing {
+    background-image: url("../images/line-up/golden-earing.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin: 10px;    
+}
+
+.picture-line-up-ragnbone {
+    background-image: url("../images/line-up/ragnbone-web.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin: 10px;
+}
+
+.picture-line-up-pearl-jam {
+    background-image: url("../images/line-up/pearl-jam.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin: 10px;
+}
+
+.picture-line-up-system-of-a-down {
+    background-image: url("../images/line-up/system-of-a-down.bmp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin: 10px;    
+}
