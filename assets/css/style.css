@@ -81,14 +81,11 @@ header {
   .navigation-header {
     top: 0px;
   }
-
-  .menuitem span {
-    text-align: center;
-}
 }
 
 .menuitem span {
     display: block;
+    text-align: center;
     width: 100%;
     padding-top: 5px;
 }
@@ -115,21 +112,21 @@ header {
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 24px;
     font-family: "Oswald" , sans-serif;
     font-weight: 600;
     text-align: center;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 22px;
     font-family: "Oswald" , sans-serif;
     font-weight: 500;
     text-align: center;
 }
 
 section div p {
-    font-size: 14px;
+    font-size: 18px;
     font-family: "Oswald" , sans-serif;
     font-weight: 300;
     text-align: center;
@@ -138,30 +135,55 @@ section div p {
 .center {
     text-align: center;
     list-style-position: inside;
-    font-size: 14px;
+    font-size: 18px;
     font-family: "Oswald" , sans-serif;
     font-weight: 300;
     padding-left: 10px;
 }
 
+@media only screen and (min-width: 1200px) {
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+section div p {
+    font-size: 24px;
+}
+
+.center {
+    font-size: 24px;
+}
+}
+
 /*--------------------------------section pictures layout Home*/
 
 .picture-big-groepsfoto2 {
-    background-image: url("../images/groepsfoto2.bmp");
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 600px;
-}
+    background-image: url("../images/frontpage/groepsfoto2.bmp");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;    
+    height: 115%;
+}  
 
 .animation div div:hover{
     animation-name: pictures;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
-
+/*
+.picture-big-outer-900 {
+    width: 100vw;
+    height: 60vw;
+    overflow: hidden;
+}
+*/
 .picture-big-outer-600 {
-    height: 600px;
+    width: 100vw;
+    height: 60vw;
     overflow: hidden;
 }
 
@@ -174,63 +196,105 @@ section div p {
     }
 }
 
-.picture-small-auto1 {
-    background-image: url("../images/auto1.bmp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;    
-    height: 300px;
+.picture-small-girls1 {
+    background-image: url("../images/frontpage/girls1.bmp");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 110%;    
 }
 
-.picture-small-girls1 {
-    background-image: url("../images/girls1.bmp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;    
-    height: 300px;
+.picture-small-sleeping {
+    background-image: url("../images/frontpage/sleeping.bmp");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;   
+    height: 110%;
+}
+
+.picture-small-car-girl {
+    background-image: url("../images/frontpage/car-girl.bmp");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;   
+    height: 125%;
+}
+
+.picture-small-car-boy {
+    background-image: url("../images/frontpage/car-boy.bmp");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;   
+    height: 125%;
+}
+
+.picture-small-outer-300-outer {
+    width: 50vw;
+    height: 60vw;
+    overflow: hidden;
 }
 
 .picture-small-outer-300 {
-    height: 300px;
+    width: 50vw;
+    height: 30vw;
     overflow: hidden;
 }
 
-.picture-small-outer-300-abs {
-    height: 300px;
+.picture-small-outer-200 {
+    width: 40vw;
     overflow: hidden;
-    position: absolute;
-    top: 726px;
-    right: 0;
 }
 
-@media only screen and (max-width: 767px) {
-.picture-small-outer-300-abs {
-    position: relative;
-    height: 400px;
-    top: 0;
-}
+@media only screen and (max-width: 575px) {
 
-.picture-small-girls1 {
-    position: relative;
-    height: 400px;
-    top: 0;
-    }
 .picture-big-groepsfoto2 {
+    background-image: url("../images/frontpage/groepsfoto2.bmp");
     background-size: cover;
-    height: 400px;
-}
+    background-position: center;
+    }
 
 .picture-big-outer-600 {
-    height: 400px;
-}
+    height: 60vh;
+    overflow: hidden;
+    }    
+
+.picture-small-outer-300-outer {
+    width: 100vw;
+    height: 80vh;   
+    }
+
+.picture-small-outer-300 {
+    width: 100vw;
+    height: 40vh;
+    }
+
+.picture-small-girls1 {
+    background-size: cover;  
+    }
+
+.picture-small-sleeping {
+    background-size: cover;
+    background-position: top;
+    }
+
+.picture-small-outer-200 {
+    width: 40vw;
+    height: 40vh;
+    overflow: hidden;
+    }
+
+.picture-small-car-girl {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    }
+
+.picture-small-car-boy {
+    background-size: cover;
+    height: 100%;
+    }    
 
 }
-
-.video-size {
-   min-height: 300px;
-   min-width: 600px;
-}
-
 /*--------------------------------section pictures layout Ticket*/
 
 .picture-container {
@@ -242,16 +306,23 @@ section div p {
 
 .picture-big-champagne {
     background-image: url("../images/camping-champagne.bmp");
-    background-size: cover;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;    
+    height: 100%;
+/*    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: fit-content;
-    margin: 0px;
+    margin: 0px;*/
 }
 
 .picture-big-outer-800 {
-    height: auto ;
-    overflow: hidden;
+    width: 100vw;
+    height: 72vw;
+
+/*    height: auto ;
+    overflow: hidden;*/
 }
 /*
 @media only screen and (max-width: 1050px) {
@@ -261,18 +332,20 @@ section div p {
 }
 }
 */
+/*
 @media only screen and (max-width: 850px) {
 
 .picture-big-champagne {
     margin: 0px;
 }
 }
+*/
 
-
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 800px) {
 .picture-big-outer-400 {
     height: 200px;
 }
+/*
 .picture-big-champagne {
     background-size: contain;
     background-position: center;
@@ -280,19 +353,19 @@ section div p {
     height: 300px;
 
 }
-
+*/
 .picture-big-outer-800 {
-    height: 550px;
+    height: 580px;
 }
 }
 
-
-@media only screen and (max-width: 430px) {
+/*
+@media only screen and (max-width: 530px) {
 .picture-big-outer-400 {
     height: 150px;
 }
 }
-
+*/
 /*--------------------------------footer layout*/
 
 .social-link li a i {
@@ -319,24 +392,36 @@ section div p {
     padding: 10px 10px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 575px) {
 .social-link li a i {
     width: 40px;
     height: 40px;
     padding: 12px 0;
-    border-radius: 50%;
     font-size: 18px;
     line-height: 18px;
-    text-align: center;
-    color: #fafafa;
-    background-color: #000000;
-}
+    }
 
 .social-link {
     padding: 20px 20px 10px;
-}
+    }
 
 }
+
+@media only screen and (min-width: 1200px) {
+.social-link li a i {
+    width: 70px;
+    height: 70px;
+    padding: 20px 0;
+    font-size: 30px;
+    line-height: 30px;
+    }
+
+.social-link {
+    padding: 40px 50px 20px;
+    }
+
+}
+
 
 .footer-logo-layout {
     background-position: center;
@@ -384,8 +469,8 @@ section div p {
     background: -moz-linear-gradient(45deg, rgba(100, 60, 250, 0.6), rgba(255, 105, 10, 0.6) 100%);
     background: -webkit-linear-gradient(45deg, rgba(100, 60, 250, 0.6), rgba(255, 105, 10, 0.6) 100%);
     background: linear-gradient(to 45deg, rgba(100, 60, 250, 0.6), rgba(255, 105, 10, 0.6) 100%);
-    max-width: 650px;
-    padding: 150px 150px 300px 150px;
+    width: 650px;
+    padding: 150px;
 }
 
 .signup-form h2 {
@@ -396,7 +481,7 @@ section div p {
 .text-input {
     background: transparent;
     color: #fafafa;
-    width:100%;
+    width: 100%;
     height: 25px;
     margin: 5px 0px 20px;
     border: 1px solid #fafafa;
@@ -423,18 +508,18 @@ section div p {
     color: #fafafa;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
 
 .signup-form {
-    max-width: 650px;
-    padding: 150px;   
+    width: 600px;
+    padding: 100px;   
 }
 }
 
 @media only screen and (max-width: 1050px) {
 
 .signup-form {
-    max-width: 500px;
+    width: 500px;
     padding: 50px;   
 }
 }
@@ -442,7 +527,7 @@ section div p {
 @media only screen and (max-width: 850px) {
 
 .signup-form {
-    max-width: 300px;
+    width: 300px;
     padding: 25px;   
 }
 
@@ -520,6 +605,7 @@ section div p {
 .picture-big-outer-100pc {
     height: 100%;
     overflow: hidden;
+    padding: 10px;
 }
 
 
@@ -529,7 +615,6 @@ section div p {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 300px;
-    margin: 10px;
 }
 
 .picture-line-up-merol {
@@ -538,7 +623,6 @@ section div p {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 300px;
-    margin: 10px;
 }
 
 .picture-line-up-golden-earing {
@@ -546,8 +630,7 @@ section div p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 300px;
-    margin: 10px;    
+    min-height: 300px;  
 }
 
 .picture-line-up-ragnbone {
@@ -556,7 +639,6 @@ section div p {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 300px;
-    margin: 10px;
 }
 
 .picture-line-up-pearl-jam {
@@ -565,7 +647,6 @@ section div p {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 300px;
-    margin: 10px;
 }
 
 .picture-line-up-system-of-a-down {
@@ -573,6 +654,5 @@ section div p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 300px;
-    margin: 10px;    
+    min-height: 300px;   
 }
