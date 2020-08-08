@@ -111,6 +111,11 @@ header {
     background-color: rgba(255,105,10, 0.5);
 }
 
+.text-style-line-up {
+    color: #f39b9b;
+    padding-top: 15px;
+}
+
 h1 {
     font-size: 24px;
     font-family: "Oswald" , sans-serif;
@@ -174,13 +179,7 @@ section div p {
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
-/*
-.picture-big-outer-900 {
-    width: 100vw;
-    height: 60vw;
-    overflow: hidden;
-}
-*/
+
 .picture-big-outer-600 {
     width: 100vw;
     height: 60vw;
@@ -305,67 +304,27 @@ section div p {
 }
 
 .picture-big-champagne {
-    background-image: url("../images/camping-champagne.bmp");
+    background-image: url("../images/tickets/camping-champagne.bmp");
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;    
     height: 100%;
-/*    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: fit-content;
-    margin: 0px;*/
 }
 
 .picture-big-outer-800 {
     width: 100vw;
     height: 72vw;
+}
 
-/*    height: auto ;
-    overflow: hidden;*/
-}
-/*
-@media only screen and (max-width: 1050px) {
-
-.picture-big-outer-800 {
-    height: 800px;
-}
-}
-*/
-/*
-@media only screen and (max-width: 850px) {
-
-.picture-big-champagne {
-    margin: 0px;
-}
-}
-*/
 
 @media only screen and (max-width: 800px) {
-.picture-big-outer-400 {
-    height: 200px;
-}
-/*
-.picture-big-champagne {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 300px;
 
-}
-*/
 .picture-big-outer-800 {
     height: 580px;
 }
 }
 
-/*
-@media only screen and (max-width: 530px) {
-.picture-big-outer-400 {
-    height: 150px;
-}
-}
-*/
+
 /*--------------------------------footer layout*/
 
 .social-link li a i {
@@ -540,119 +499,124 @@ section div p {
 /*--------------------------------section pictures layout Festivalpark*/
 
 .picture-big-camping-opbouw {
-    background-image: url("../images/camping-opbouw.bmp");
+    background-image: url("../images/festivalpark/camping-opbouw.bmp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 60vh;
 }
 
 .picture-big-festivalpark-day {
-    background-image: url("../images/festivalpark-day.bmp");
+    background-image: url("../images/festivalpark/festivalpark-day.bmp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 60vh;
 }
 
 .picture-big-festivalpark-night {
-    background-image: url("../images/festivalpark-night.bmp");
+    background-image: url("../images/festivalpark/festivalpark-night.bmp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 60vh;
 }
 
 .picture-big-camping-joris {
-    background-image: url("../images/camping-joris.bmp");
+    background-image: url("../images/festivalpark/camping-joris.bmp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 60vh;
 }
 
 .picture-big-beerstack {
-    background-image: url("../images/beerstack.bmp");
+    background-image: url("../images/festivalpark/beerstack.bmp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 60vh;
 }
 
 .picture-big-beerfrige {
-    background-image: url("../images/beerfrige.bmp");
+    background-image: url("../images/festivalpark/beerfrige.bmp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 60vh;
 }
 
 .picture-big-outer-400 {
-    height: 400px;
+    height: 60vh;
     overflow: hidden;
 }
 
 
 @media only screen and (max-width: 900px) {
 .picture-big-outer-400 {
-    height: 300px;
+    height: 50vh;
 }
 }
-
-
+/*
+@media only screen and (max-width: 800px) {
+.picture-big-outer-400 {
+    height: 40vh;
+}
+}
+*/
 /*--------------------------------section pictures layout line up*/
 
 .picture-big-outer-100pc {
-    height: 100%;
+    height: 40vh;
     overflow: hidden;
-    padding: 10px;
+
 }
 
 
 .picture-line-up-wc-experience {
     background-image: url("../images/line-up/wc-experience.bmp");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 300px;
+    height: 40vh;
 }
 
 .picture-line-up-merol {
     background-image: url("../images/line-up/merol.bmp");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 300px;
+    height: 40vh;
 }
 
 .picture-line-up-golden-earing {
     background-image: url("../images/line-up/golden-earing.bmp");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 300px;  
+    height: 40vh;  
 }
 
 .picture-line-up-ragnbone {
     background-image: url("../images/line-up/ragnbone-web.bmp");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 300px;
+    min-height: 40vh;
 }
 
 .picture-line-up-pearl-jam {
     background-image: url("../images/line-up/pearl-jam.bmp");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 300px;
+    min-height: 40vh;
 }
 
 .picture-line-up-system-of-a-down {
     background-image: url("../images/line-up/system-of-a-down.bmp");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 300px;   
+    min-height: 40vh;
 }
