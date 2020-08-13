@@ -1,4 +1,4 @@
-Milestone 1: alternative RW2020
+#Milestone 1: alternative RW2020
 Me and my friends go yearly to a music festival that is called Rock Werchter.
 Due to the corona pandemic that festival was cancelled. The strict lockdown that we had became more lenient in June so my friend that it would be fun to have a little Rock Werchter party in his back garden. That gave me the idea to make a “fake” website for that party and give it a look and feel of the official website https://www.rockwerchter.be/nl/ .
 It is by no means a copy but more a parody of the website with pictures of me and my friends from earlier editions of de festival.    
