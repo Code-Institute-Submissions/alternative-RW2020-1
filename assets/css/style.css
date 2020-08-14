@@ -6,7 +6,7 @@ header {
     margin: 0;
 } 
 
-
+/*banner layout*/
 .background-header {
     background-image: url("../images/background-header.bmp");
     background-position: center;
@@ -16,15 +16,12 @@ header {
     position: absolute;
 }
 
+/*Top left text box on top of banner*/
 .background-header-box {
     min-height: 240px;
 }
 
-.background-footer {
-    background-color: #0000ff;
-    min-height: 240px;
-}
-
+/*text style top left text box*/
 .datum-locatie-header {
     position: relative;
     font-family: "Oswald" , sans-serif;
@@ -35,6 +32,7 @@ header {
     margin: 50px 48px 24px 48px;
 }
 
+/*Navigation container, the linear gradient gives the nav bar its transparent background color*/
 .menucontainer {
     font-size: 0;
     margin-top: 0;
@@ -45,14 +43,17 @@ header {
     background: linear-gradient(to 45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
 }
 
+/*nav bar margin*/
 .list-inline-item:not(:last-child) {
     margin: 0;
 }
 
+/*nav bar text color*/
 .list-inline-item a {
     color: #f6dfdf;
 }
 
+/*nav bar text style*/
 #nav li {
     font-size: 24px;
     padding: 0;
@@ -60,15 +61,18 @@ header {
     font-weight: 500;
 }
 
+/*nav bar hover*/
 #nav li a:hover {
   color: black;
   text-decoration: none;
 }
 
+/*nav bar active text page color*/
 #nav li a.active {
   color: black;
 }
 
+/*Placing of the nav bar on top of the banner*/
 .navigation-header {
     position: relative;
     top: 120px;
@@ -77,24 +81,27 @@ header {
     text-align: center;
 }
 
+/*On smaller screens the nav bar is placed under the banner*/
 @media only screen and (max-width: 767px) {
   .navigation-header {
     top: 0px;
-  }
+    }
 }
 
+/*Menu item placing*/
 .menuitem span {
     display: block;
     text-align: center;
     width: 100%;
     padding-top: 5px;
 }
-/*--------------------------------Special paddings/margins/text*/
+/*--------------------------------text box style*/
 
 .uppercase {
     text-transform: uppercase;
 }
 
+/*General text box style for all pages*/
 .text-style {
     border-width: 10px;
     border-color: rgba(255,105,10, 1);
@@ -103,6 +110,7 @@ header {
     background-color: rgba(255,105,10, 0.5);
 }
 
+/*text box style for the festivalpark inner text box (ordered list)*/
 .text-style-inside {
     border-width: 10px;
     border-color: rgba(255,105,10, 1);
@@ -111,11 +119,14 @@ header {
     background-color: rgba(255,105,10, 0.5);
 }
 
+/*text style used for the band names on the line up page*/
 .text-style-line-up {
-    color: #f39b9b;
+    color: #f19090;
+    text-shadow: 2px 2px #000000;
     padding-top: 15px;
 }
 
+/*general text h1 style*/
 h1 {
     font-size: 24px;
     font-family: "Oswald" , sans-serif;
@@ -123,6 +134,7 @@ h1 {
     text-align: center;
 }
 
+/*general text h2 style*/
 h2 {
     font-size: 22px;
     font-family: "Oswald" , sans-serif;
@@ -130,6 +142,7 @@ h2 {
     text-align: center;
 }
 
+/*general text p style*/
 section div p {
     font-size: 18px;
     font-family: "Oswald" , sans-serif;
@@ -137,6 +150,7 @@ section div p {
     text-align: center;
 }
 
+/*general text style used for the ordered list on the festivalpark page*/
 .center {
     text-align: center;
     list-style-position: inside;
@@ -146,26 +160,55 @@ section div p {
     padding-left: 10px;
 }
 
+/*bigger fontsize for bigger screens*/
 @media only screen and (min-width: 1200px) {
 h1 {
     font-size: 32px;
-}
+    }
 
 h2 {
     font-size: 30px;
-}
+    }
 
 section div p {
     font-size: 24px;
-}
+    }
 
 .center {
     font-size: 24px;
-}
+    }
 }
 
 /*--------------------------------section pictures layout Home*/
 
+/*picture box to stop overflow from the animation*/
+.picture-big-outer-600 {
+    width: 100vw;
+    height: 60vw;
+    overflow: hidden;
+}
+
+/*picture box to stop overflow from the animation. box for the 2 pictures next to the big one*/
+.picture-small-outer-300-outer {
+    width: 50vw;
+    height: 60vw;
+    overflow: hidden;
+}
+
+/*picture box to stop overflow from the animation*/
+.picture-small-outer-300 {
+    width: 50vw;
+    height: 30vw;
+    overflow: hidden;
+}
+
+/*picture box to stop overflow from the animation*/
+.picture-small-outer-200 {
+    width: 40vw;
+    overflow: hidden;
+}
+
+/*Styling of the picture that is in the picture-big-outer-600 box */
 .picture-big-groepsfoto2 {
     background-image: url("../images/frontpage/groepsfoto2.bmp");
     background-size: contain;
@@ -174,17 +217,49 @@ section div p {
     height: 115%;
 }  
 
+/*styling of the picture that is in the picture-big-outer-300 box top*/
+.picture-small-girls1 {
+    background-image: url("../images/frontpage/girls1.bmp");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 110%;    
+}
+
+/*styling of the picture that is in the picture-big-outer-300 box bottom*/
+.picture-small-sleeping {
+    background-image: url("../images/frontpage/sleeping.bmp");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;   
+    height: 110%;
+}
+
+/*styling of the picture that is in the picture-big-outer-200 box left of the video*/
+.picture-small-car-girl {
+    background-image: url("../images/frontpage/car-girl.bmp");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;   
+    height: 125%;
+}
+
+/*styling of the picture that is in the picture-big-outer-200 box right of the video*/
+.picture-small-car-boy {
+    background-image: url("../images/frontpage/car-boy.bmp");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;   
+    height: 125%;
+}
+
+/*animation of the pictures in the home, festivalpark and line up page*/
 .animation div div:hover{
     animation-name: pictures;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
-.picture-big-outer-600 {
-    width: 100vw;
-    height: 60vw;
-    overflow: hidden;
-}
 
 @keyframes pictures {
     from {
@@ -195,55 +270,7 @@ section div p {
     }
 }
 
-.picture-small-girls1 {
-    background-image: url("../images/frontpage/girls1.bmp");
-    background-size: contain;
-    background-position: left;
-    background-repeat: no-repeat;
-    height: 110%;    
-}
-
-.picture-small-sleeping {
-    background-image: url("../images/frontpage/sleeping.bmp");
-    background-size: contain;
-    background-position: left;
-    background-repeat: no-repeat;   
-    height: 110%;
-}
-
-.picture-small-car-girl {
-    background-image: url("../images/frontpage/car-girl.bmp");
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;   
-    height: 125%;
-}
-
-.picture-small-car-boy {
-    background-image: url("../images/frontpage/car-boy.bmp");
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;   
-    height: 125%;
-}
-
-.picture-small-outer-300-outer {
-    width: 50vw;
-    height: 60vw;
-    overflow: hidden;
-}
-
-.picture-small-outer-300 {
-    width: 50vw;
-    height: 30vw;
-    overflow: hidden;
-}
-
-.picture-small-outer-200 {
-    width: 40vw;
-    overflow: hidden;
-}
-
+/*The pictures and boxes are resized to make it look good on smaller screen sizes*/
 @media only screen and (max-width: 575px) {
 
 .picture-big-groepsfoto2 {
@@ -294,39 +321,28 @@ section div p {
     }    
 
 }
-/*--------------------------------section pictures layout Ticket*/
 
-.picture-container {
-    background: -moz-linear-gradient(45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
-    background: linear-gradient(to 45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
 
+/*--------------------------------footer social-link layout*/
+
+/*footer background color*/
+.background-footer {
+    background-color: #0000ff;
+    min-height: 240px;
 }
 
-.picture-big-champagne {
-    background-image: url("../images/tickets/camping-champagne.bmp");
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;    
-    height: 100%;
+/*The list items are put in the center of the column*/
+.social-link {
+    padding: 30px 40px 20px;
+    text-align: center;
 }
 
-.picture-big-outer-800 {
-    width: 100vw;
-    height: 72vw;
+/*padding for the list item*/
+.social-link li{
+    padding: 10px 10px;
 }
 
-
-@media only screen and (max-width: 800px) {
-
-.picture-big-outer-800 {
-    height: 580px;
-}
-}
-
-
-/*--------------------------------footer layout*/
-
+/*style and size of the icons*/
 .social-link li a i {
     width: 50px;
     height: 50px;
@@ -339,18 +355,12 @@ section div p {
     background-color: #000000;
 }
 
+/*when hovered over the background color becomes transparent grey*/
 .social-link li a i:hover {
     background-color: rgba(83, 79, 79, 0.848);
 }
 
-.social-link {
-    padding: 30px 40px 20px;
-}
-
-.social-link li{
-    padding: 10px 10px;
-}
-
+/*icons become smaller for smaller screens*/
 @media only screen and (max-width: 575px) {
 .social-link li a i {
     width: 40px;
@@ -366,6 +376,7 @@ section div p {
 
 }
 
+/*Icons become bigger for bigger screens*/
 @media only screen and (min-width: 1200px) {
 .social-link li a i {
     width: 70px;
@@ -381,15 +392,28 @@ section div p {
 
 }
 
+/*--------------------------------footer sponsor logo layout*/
 
+/*The logo's are put in the center of the column*/
+.sponsor {
+    text-align: center;
+}
+
+/*padding for the list item*/
+.sponsor li {
+    padding: 20px 20px 10px;
+}
+
+/*General Logo style. The logo is put in the center of the 100*50 box at 75% to make them fit*/
 .footer-logo-layout {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 75%;
-    min-height: 50px;
-    min-width: 100px;
+    height: 50px;
+    width: 100px;
 }
 
+/*Sponsor logo to be presented*/
 .footer-jupiler-logo {
     background-image: url("https://assets.rockwerchter.be/files/jup-white-5a05b1d939fa5.png?v32.1");
 }
@@ -415,14 +439,43 @@ section div p {
     background-image: url("https://assets.rockwerchter.be/files/winforlife-5a745f0064d2f.png?v32.1");
 }
 
-.sponsor li {
-    padding: 20px 20px 10px;
+/*--------------------------------section pictures layout Ticket*/
+
+/*the linear gradient gives the ticket section its background color.*/
+.picture-container {
+    background: -moz-linear-gradient(45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
+    background: linear-gradient(to 45deg, rgba(100, 60, 250, 1), rgba(255, 105, 10, 1) 100%);
+
+}
+
+/*The picture box scales with the screen size*/
+.picture-big-outer-800 {
+    width: 100vw;
+    height: 72vw;
+}
+
+/*picture is put in the center and made to fit in the box*/
+.picture-big-champagne {
+    background-image: url("../images/tickets/camping-champagne.bmp");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;    
+    height: 100%;
+}
+
+/*he picture box can not get smaller then this otherwise the form goes over the diclaimer text box*/
+@media only screen and (max-width: 800px) {
+
+.picture-big-outer-800 {
+    height: 580px;
+}
 }
 
 
 /*--------------------------------tickets form layout*/
 
-
+/*the linear gradient gives the form its transparent background color.*/
 .signup-form {
     color: #fff;
     background: -moz-linear-gradient(45deg, rgba(100, 60, 250, 0.6), rgba(255, 105, 10, 0.6) 100%);
@@ -432,11 +485,13 @@ section div p {
     padding: 150px;
 }
 
+/*form title*/
 .signup-form h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
 
+/*text input box style. When filled in the box background is "white" and the text black*/
 .text-input {
     background: transparent;
     color: #fafafa;
@@ -447,10 +502,12 @@ section div p {
     border-radius: 2px;
 }
 
+/* text input box border turns orange when hovered over*/
 .text-input:hover {
     border-color: rgba(255, 105, 10, 1);
 }
 
+/*general style of the "Let's Rock" button*/
 .join-button {
     margin-top: 20px;
     border-radius: 2px;
@@ -462,17 +519,24 @@ section div p {
     display: block;
 }
 
+/*button turns blue when hovered over*/
 .join-button:hover {
     background-color: rgba(100, 60, 250, 1);
-    color: #fafafa;
 }
 
+/*the placeholder text in the text input box is black */
+ ::placeholder {
+   color: black;
+   opacity: 1; 
+}
+
+/*The form is resized to keep it big enough but not to big*/
 @media only screen and (max-width: 1200px) {
 
 .signup-form {
     width: 600px;
     padding: 100px;   
-}
+    }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -480,7 +544,7 @@ section div p {
 .signup-form {
     width: 500px;
     padding: 50px;   
-}
+    }
 }
 
 @media only screen and (max-width: 850px) {
@@ -488,135 +552,98 @@ section div p {
 .signup-form {
     width: 300px;
     padding: 25px;   
+    }
 }
 
- ::placeholder {
-   color: black;
-   opacity: 1; 
-}
-}
+
 
 /*--------------------------------section pictures layout Festivalpark*/
 
-.picture-big-camping-opbouw {
-    background-image: url("../images/festivalpark/camping-opbouw.bmp");
+/*picture box that stops the animation from going over other pictures*/
+.picture-big-outer-400 {
+    height: 60vh;
+    overflow: hidden;
+}
+
+/*makes the picture height smaller so that they look better on smaller screens*/
+@media only screen and (max-width: 900px) {
+.picture-big-outer-400 {
+    height: 50vh;
+    }
+}
+
+/*general line up picture style. picture is put in the center and covers the whole box*/
+.picture-big {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 60vh;
+}
+
+/*background picture to be presented*/
+.picture-big-camping-opbouw {
+    background-image: url("../images/festivalpark/camping-opbouw.bmp");
 }
 
 .picture-big-festivalpark-day {
     background-image: url("../images/festivalpark/festivalpark-day.bmp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
 }
 
 .picture-big-festivalpark-night {
     background-image: url("../images/festivalpark/festivalpark-night.bmp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
 }
 
 .picture-big-camping-joris {
     background-image: url("../images/festivalpark/camping-joris.bmp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
 }
 
 .picture-big-beerstack {
     background-image: url("../images/festivalpark/beerstack.bmp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
 }
 
 .picture-big-beerfrige {
     background-image: url("../images/festivalpark/beerfrige.bmp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
-}
-
-.picture-big-outer-400 {
-    height: 60vh;
-    overflow: hidden;
 }
 
 
-@media only screen and (max-width: 900px) {
-.picture-big-outer-400 {
-    height: 50vh;
-}
-}
-/*
-@media only screen and (max-width: 800px) {
-.picture-big-outer-400 {
-    height: 40vh;
-}
-}
-*/
 /*--------------------------------section pictures layout line up*/
 
-.picture-big-outer-100pc {
+/*picture box that stops the animation from going over other pictures*/
+.picture-big-outer-100 {
     height: 40vh;
     overflow: hidden;
 
 }
 
-
-.picture-line-up-wc-experience {
-    background-image: url("../images/line-up/wc-experience.bmp");
+/*general line up picture style.picture is put in the center and made to fit in the box*/
+.picture-line-up {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 40vh; 
+}
+
+/*background picture to be presented*/
+.picture-line-up-wc-experience {
+    background-image: url("../images/line-up/wc-experience.bmp");
 }
 
 .picture-line-up-merol {
     background-image: url("../images/line-up/merol.bmp");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 40vh;
 }
 
 .picture-line-up-golden-earing {
     background-image: url("../images/line-up/golden-earing.bmp");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 40vh;  
 }
 
 .picture-line-up-ragnbone {
     background-image: url("../images/line-up/ragnbone-web.bmp");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 40vh;
 }
 
 .picture-line-up-pearl-jam {
     background-image: url("../images/line-up/pearl-jam.bmp");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 40vh;
 }
 
 .picture-line-up-system-of-a-down {
     background-image: url("../images/line-up/system-of-a-down.bmp");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 40vh;
 }
