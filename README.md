@@ -49,8 +49,15 @@ I have used the following technologys for this project:
 -	Bootstrap, for a responsive and mobile-first layout
 -	Font Awesome, for the social link icons
 -	Google Fonts, Text style fonts
+-   Google/w3schools, for knowledge and tips & tricks 
 
 # Testing
+
+## Testing environment
+All test were performed on a windows 10 laptop using the Chrome browser.
+Desktop(laptop) and mobile configuration(iPhone 6/7/8 Plus).
+See compatibility for the non functional test enviroments.
+
 ### 1.	Background Banner and the placing of the date location container and nav bar:
 *	Mobile 
     1.	The date location container is on top of the background banner and the navbar is placed under the banner.
@@ -139,18 +146,29 @@ I have used the following technologys for this project:
 
 ### 7.	Footer:
 *	Mobile: 
-    1.	There are five social media links in a full row.
+    1.	There are five social media links centered in a full row.
     2.	When the user clicks on a link the black circle becomes grey. 
     3.	When the user clicks on a link, the official RW social site is opened in a new tab.
-    4.	There are six sponsor links(only on the homepage), two by three.
+    4.	There are six sponsor links centered (only on the homepage), two by three.
     5.	When the user clicks on a link, the official sponsor site is opened in a new tab.
 *	Tablet and desktop: 
-    1.	There are five social media links placed to the left.
+    1.	There are five social media centered in a full row.
     2.	These links scale with the screen size.
     3.	When the user clicks on a link the black circle becomes grey. 
     4.	When the user clicks on a link, the official RW social site is opened in a new tab.
-    5.	There are six sponsor links placed horizontally(Only on the homepage). When they don’t fit in one row they go down one by one.
+    5.	There are six sponsor links placed center horizontally(Only on the homepage). When they don’t fit in one row they go down one by one.
     6.	When the user clicks on a link, the official sponsor site is opened in a new tab.
+
+
+## Noted issues 
+I checked my CSS code on https://jigsaw.w3.org/css-validator and got the following errors.
+- 45 	.menucontainer 	Ongeldig getal : background 45deg geen linear-gradient waarde )
+- 302 	.picture-container 	Ongeldig getal : background 45deg geen linear-gradient waarde )
+- 431 	.signup-form 	Ongeldig getal : background 45deg geen linear-gradient waarde )
+
+I ignored these errors since the code works as expected.
+
+-Scaling of the pictures is not optimal. Next time I’m going to take a better look at the size(amount of pixels) a picture has. Also I’m not really happy with the pictures in the CSS. That is something I’m going to do fundamentally different next time.  
 
 ## COMBATIBILITY
 I tested  my site on three browsers in both desktop(laptop) and mobile configuration. 
@@ -160,17 +178,7 @@ I also looked at the site on my phone and tablet that run android. I did not tes
 -	Edge
 -	Firefox
 
-I also checked my CSS code on https://jigsaw.w3.org/css-validator and got the following errors.
-- 45 	.menucontainer 	Ongeldig getal : background 45deg geen linear-gradient waarde )
-- 302 	.picture-container 	Ongeldig getal : background 45deg geen linear-gradient waarde )
-- 431 	.signup-form 	Ongeldig getal : background 45deg geen linear-gradient waarde )
-
-I ignored these errors since the code works as expected.
-
-## Noted issues 
-Scaling of the pictures is not optimal. Next time I’m going to take a better look at the size(amount of pixels) a picture has. Also I’m not really happy with the pictures in the CSS. That is something I’m going to do fundamentally different next time.  
-
-## Deployment
+# Deployment
 This project was created using Github. From there I used Gitpod.io to write my code. Then I used commits to git followed by pushes to my GitHub repository.
 As my final step I've deployed this project to GitHub Pages from the GitHub repository using the following steps:
 1.	Login to my GitHub account
@@ -193,7 +201,7 @@ To run this project locally the following steps should be followed:
 # Credits
 ## Content
 -	All the content for this page was written by myself except the disclaimer text.
--	I use the sponsor logos from the official RW site.
+-	I use the sponsor logos that are hosted by the official RW site.
 -	The disclaimer text is a general one that I got from https://www.ecoinvent.org/disclaimer.html 
 ## Media
 -	The pictures that I used are made by me and my friend in de pictures.
