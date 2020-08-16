@@ -110,7 +110,8 @@ header {
     background-color: rgba(255,105,10, 0.5);
 }
 
-/*text box style for the festivalpark inner text box (ordered list)*/
+/*text box style for the festivalpark inner text box (ordered list) is a copy of text-style
+ but like this it can be changed seperate*/
 .text-style-inside {
     border-width: 10px;
     border-color: rgba(255,105,10, 1);
@@ -413,7 +414,7 @@ section div p {
     width: 100px;
 }
 
-/*Sponsor logo to be presented*/
+/*Sponsor logo to be presented. These are the official logos hosted by rockwerchter.be*/
 .footer-jupiler-logo {
     background-image: url("https://assets.rockwerchter.be/files/jup-white-5a05b1d939fa5.png?v32.1");
 }
